@@ -22,7 +22,8 @@ python -m http.server 8000
 ```
 
 2. Quickly Test out using GitHub Pages.
-Click the link: [https://gfrosh/github.io/article-builder/](https://gfrosh/github.io/article-builder/)
+
+Click the link: [https://gfrosh.github.io/article-builder/](https://gfrosh.github.io/article-builder/)
 
 
 Development notes
