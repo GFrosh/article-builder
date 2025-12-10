@@ -21,6 +21,10 @@ python -m http.server 8000
 # then open http://localhost:8000 in your browser
 ```
 
+2. Quickly Test out using GitHub Pages.
+Click the link: [https://gfrosh/github.io/article-builder/](https://gfrosh/github.io/article-builder/)
+
+
 Development notes
 
 - Edit HTML files to change layout/content.
@@ -51,7 +55,7 @@ Small one-file/feature PRs welcome (HTML/CSS/JS). If you add features that chang
 
 Author / Contact
 
-Replace this line with your name and contact info if you want to be credited.
+Gideon Onyegbula || [WhatsApp](https://wa.me/+2348137960057/)
 
 License summary
 
