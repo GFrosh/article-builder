@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Simple Article Builder</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Create Article</h1>
+
+    <section class="first">
+
+        <!-- HEADING -->
+        <div>
+            <label>Heading (required)</label>
+            <input id="title" type="text" placeholder="Article title" />
+        </div>
+
+        <!-- SUBHEADING -->
+        <div>
+            <label>Subheading (optional)</label>
+            <input id="subheading" type="text" placeholder="Short subheading" />
+        </div>
+
+        <!-- COVER IMAGE -->
+        <div>
+            <label>Cover Image (required)</label>
+            <input id="coverInput" type="file" accept="image/*" />
+            <input id="coverAlt" type="text" placeholder="Alt text" />
+			<div id="cover-preview">
+				
+			</div>
+        </div>
+
+        <!-- CATEGORY -->
+        <div>
+            <label>Category (required)</label>
+            <select id="category" title="select" multiple>
+                <option value="default">-- select a category --</option>
+                <option value="news">News</option>
+                <option value="tutorial">Tutorial</option>
+                <option value="review">Review</option>
+            </select>
+        </div>
+
+        <!-- AUTHOR -->
+        <div>
+            <label>Author</label>
+            <input id="author" type="text" placeholder="Author name" />
+        </div>
+
+        <!-- TAGS -->
+        <div>
+            <label>Tags (comma separated)</label>
+            <input id="tags" type="text" placeholder="tag1, tag2" />
+        </div>
+
+        <!-- EXCERPT -->
+        <div>
+            <label>Excerpt</label>
+            <textarea id="excerpt" placeholder="Short summary"></textarea>
+        </div>
+
+        <!-- MAIN BODY -->
+        <div id="main-body">
+            <label>Main Body</label>
+            <div id="blocks" class="blocks">
+            </div>
+
+
+            <!-- THE BUILDING BLOCKS -->
+            <div class="row">
+                <button id="addParagraph" class="button">+ Paragraph</button>
+                <button id="addImage" class="button secondary">+ Image</button>
+                <button id="addVideo" class="button secondary">+ Video</button>
+                <button id="addQuote" class="button secondary">+ Quote</button>
+            </div>
+        </div>
+
+        <!-- ACTION BUTTONS -->
+        <div class="row">
+            <button id="saveDraft" class="button">Save Draft</button>
+            <button id="publish" class="button">Publish</button>
+            <button id="loadPreview" class="button">View Preview</button>
+        </div>
+
+    </section>
+
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
