@@ -90,8 +90,17 @@ function createBlock(type) {
             caption.type = "text";
             caption.placeholder = "Caption";
 
+            const videoPreview = document.createElement('div');
+            videoPreview.className = "videoPreview";
+
+            file.addEventListener('change', () => {
+                priviewer(file, videoPreview);
+            });
+
             wrap.appendChild(file);
             wrap.appendChild(caption);
+            wrap.appendChild(videoPreview);
+
             break;
         }
         case 'quote': {
@@ -171,6 +180,25 @@ const previewer = (input, previewContainer) => {
         
         previewContainer.innerHTML = '';
         previewContainer.appendChild(img);
+    }
+    reader.readAsDataURL(file);
+}
+
+
+// VIDEO PREVIEWER
+const priviewer = (input, previewContainer) => {
+    const file = input.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = () => {
+        const video = document.createElement('video');
+        video.src = reader.result;
+        video.controls = true;
+        video.maxWidth = 300;
+        
+        previewContainer.innerHTML = '';
+        previewContainer.appendChild(video);
     }
     reader.readAsDataURL(file);
 }
