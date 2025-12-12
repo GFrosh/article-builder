@@ -45,9 +45,9 @@ function createBlock(type) {
     controls.className = 'row';
     controls.style.justifyContent = 'flex-end';
     controls.innerHTML = `
-        <button data-action="moveUp" class="button small controls">↑</button>
-        <button data-action="moveDown" class="button small controls">↓</button>
-        <button data-action="delete" class="button small controls">🗑</button>
+        <button data-action="moveUp" class="button small controls"><ion-icon name="arrow-up"></ion-icon></button>
+        <button data-action="moveDown" class="button small controls"><ion-icon name="arrow-down"></ion-icon></button>
+        <button data-action="delete" class="button small controls"><ion-icon name="trash"></ion-icon></button>
     `;
     block.appendChild(controls);
 
