@@ -219,6 +219,9 @@ ion-icon {
 
 /* MOBILE OVERRIDES */
 @media (max-width: 795px) {
+    .container {
+        padding: 1rem 1.25rem;
+    }
     .first {
         grid-template-columns: 1fr;
     }
