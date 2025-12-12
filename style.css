@@ -114,8 +114,7 @@ select {
 }
 
 #cover-preview,
-.imagesPreview,
-.videoPreview {
+#imagesPreview {
     border: 1.5px solid var(--accent);
     background: var(--darkish);
     padding: calc(var(--gap) * 0.5);
@@ -124,8 +123,7 @@ select {
 }
 
 #cover-preview img,
-.imagesPreview img,
-.videoPreview video,
+#imagesPreview img,
 #main-body img {
     max-height: 250px;
     width: 100%;
