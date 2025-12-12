@@ -4,57 +4,102 @@
     --darkish: #1f2937;
     --muted: #6b7280;
     --white: #ffffff;
-    --off_white: #f3f4f6;
+    --off_white: #f8f9fb;
     --whitish: #e5e7eb;
-    --gap: 1.25rem;
+    --gap: 1.4rem;
 }
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: "Inter", "Segoe UI", Arial, sans-serif;
 }
 
 body { 
 	padding: var(--gap);
-	max-width: 920px;
+	max-width: 760px;
 	margin: auto;
-	line-height: 1.6;
+	line-height: 1.8;
+	background: var(--off_white);
+	color: var(--darkish);
 }
 
-img {
-	max-width: 100%;
-	margin: 20px 0;
-	border-radius: 8px;
-}
-
-video {
-	max-width: 100%;
-	margin: 20px 0;
-}
-
-blockquote {
-	padding: var(--gap);
-	margin: 20px 0;
+/* ARTICLE WRAPPER */
+.preview-article {
 	background: var(--white);
-	border-left: 5px solid var(--darkish);
-	font-style: italic;
+	padding: calc(var(--gap) * 1.5);
+	border-radius: 16px;
+	box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
 }
 
+/* IMAGES */
+img {
+	width: 100%;
+	margin: 25px 0;
+	border-radius: 12px;
+	box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+	object-fit: cover;
+}
+
+/* VIDEOS */
+video {
+	width: 100%;
+	margin: 25px 0;
+	border-radius: 12px;
+	box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+}
+
+/* HEADINGS */
 h1 {
-	margin: var(--gap);
-	text-transform: uppercase;
+	margin: 0 0 10px 0;
+	font-size: 2.4rem;
+	font-weight: 800;
+	letter-spacing: -.5px;
+	text-transform: none;
+	color: var(--darkish);
 }
 
 h2 {
-	margin-bottom: 20px;
-	font-weight: 400;
-	text-transform: capitalize;
+	margin: 35px 0 15px 0;
+	font-size: 1.6rem;
+	font-weight: 600;
+	color: var(--darkish);
 }
 
+/* META */
 .meta {
 	color: var(--muted);
-	margin-bottom: 30px;
+	margin-bottom: 35px;
+	font-size: .9rem;
+	border-bottom: 1px solid var(--whitish);
+	padding-bottom: 15px;
 }
 
+/* PARAGRAPHS */
+p {
+	margin: 18px 0;
+	font-size: 1.05rem;
+}
+
+/* BLOCKQUOTE */
+blockquote {
+	padding: 1.4rem 1.6rem;
+	margin: 25px 0;
+	background: var(--white);
+	border-left: 5px solid var(--accent);
+	border-radius: 8px;
+	font-style: italic;
+	font-size: 1.1rem;
+	color: var(--darkish);
+	box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+/* TAGS AREA */
+.tags {
+	margin-top: 40px;
+	padding-top: 20px;
+	border-top: 1px solid var(--whitish);
+	font-size: .95rem;
+	color: var(--muted);
+}
