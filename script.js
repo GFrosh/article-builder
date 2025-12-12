@@ -9,18 +9,6 @@ const coverPreview = qs('#cover-preview');
 
 
 
-/* // LOCK SELECTION FUNCTION
-const lockSelectable = (selectID) => {
-    let options = Array.from(qs(selectID).selectedOptions);
-    options[0].disabled = true;
-}
-
-// SELECTION LISTENER TO LOCK FIRST OPTION
-qs('#category').addEventListener('change', () => {
-    lockSelectable('#category');
-}); */
-
-
 // BASIC VALIDATION
 function validateArticle() {
     if (!qs("#title").value.trim()) return "Title is required.";
