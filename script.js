@@ -44,9 +44,9 @@ function createBlock(type) {
     controls.className = 'row';
     controls.style.justifyContent = 'flex-end';
     controls.innerHTML = `
-        <button data-action="moveUp" class="button secondary small">↑</button>
-        <button data-action="moveDown" class="button secondary small">↓</button>
-        <button data-action="delete" class="button secondary small">🗑</button>
+        <button data-action="moveUp" class="button small controls">↑</button>
+        <button data-action="moveDown" class="button small controls">↓</button>
+        <button data-action="delete" class="button small controls">🗑</button>
     `;
     block.appendChild(controls);
 

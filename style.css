@@ -3,10 +3,12 @@
     --accent-light: #3b82f6;
     --darkish: #1f2937;
     --muted: #6b7280;
-    --white: #ffffff;
+    --white: #fff;
     --off_white: #f3f4f6;
     --whitish: #e5e7eb;
+    --shadow: rgba(0,0,0,0.08);
     --gap: 1.25rem;
+    --pad: 1.75rem;
     --radius: 12px;
 }
 
@@ -24,7 +26,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: var(--whitish);
+    background: var(--off_white);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     color: var(--darkish);
 }
@@ -38,7 +40,7 @@ h1 {
 }
 
 .container {
-    padding: var(--gap);
+    padding: 2rem 2.5rem;
     max-width: 1000px;
 }
 
@@ -46,20 +48,27 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--gap);
+    margin-bottom: var(--gap);
 }
 
 .first div {
-    background: var(--off_white);
+    background: var(--white);
     border-radius: var(--radius);
     padding: var(--gap);
-    border: 1.5px solid var(--darkish);
+    box-shadow: 0 3px 10px var(--shadow);
+}
+
+.first div label {
+    font-weight: 600;
+    color: var(--darkish);
+    margin-bottom: var(--gap);
 }
 
 .first div input {
     width: 100%;
     margin-top: var(--gap);
     border-radius: var(--radius);
-    border: 1px solid var(--darkish);
+    border: 2px solid var(--darkish);
     padding: 10px;
     background: var(--white);
 }
@@ -75,7 +84,7 @@ select:focus {
 select {
     width: 100%;
     padding: 10px;
-    border: 1px solid var(--darkish);
+    border: 2px solid var(--darkish);
     border-radius: var(--radius);
     background: var(--white);
 }
@@ -85,7 +94,7 @@ select {
     height: 200px;
     margin-top: var(--gap);
     border-radius: var(--radius);
-    border: 1px solid var(--darkish);
+    border: 3px dotted var(--muted);
     padding: 10px;
     background: var(--white);
 }
@@ -102,24 +111,28 @@ select {
 
 #blocks .block {
     border: none;
+    background: var(--whitish);
 }
 
-#blocks .row {
-    border: none;
+
+#builders {
+    background: var(--whitish);
 }
 
 #main-body #blocks .block .wrap {
     border: none;
-    padding: 0;
+    margin-top: 15px;
+    padding: 10px;
 }
 
 #cover-preview,
 #imagesPreview {
-    border: 1.5px solid var(--accent);
+    border: 2px dotted var(--accent);
     background: var(--darkish);
     padding: calc(var(--gap) * 0.5);
     text-align: center;
     border-radius: 8px;
+    margin: 0.5em;
 }
 
 #cover-preview img,
@@ -172,6 +185,17 @@ select {
 .small {
     padding: 6px 8px;
     font-size: 0.85rem;
+}
+
+.action {
+    transition: all .4s ease-out;
+}
+
+.controls:hover,
+.action:hover {
+    background: var(--white);
+    color: var(--accent);
+    border: 2px solid var(--accent);
 }
 
 .block {
