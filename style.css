@@ -137,7 +137,7 @@ select {
 
 #cover-preview img,
 .imagesPreview img,
-.video preview video,
+.videoPreview video,
 #main-body img {
     max-height: 250px;
     width: 100%;
@@ -232,7 +232,7 @@ ion-icon {
 }
 @media (max-width: 619px) {
     #cover-preview img,
-    ,video preview video,
+    .videoPreview video,
     .imagesPreview img {
         max-height: 150px;
     }
