@@ -126,7 +126,7 @@ select {
 }
 
 #cover-preview,
-#imagesPreview {
+.imagesPreview {
     border: 2px dotted var(--accent);
     background: var(--darkish);
     padding: calc(var(--gap) * 0.5);
@@ -136,7 +136,8 @@ select {
 }
 
 #cover-preview img,
-#imagesPreview img,
+.imagesPreview img,
+.video preview video,
 #main-body img {
     max-height: 250px;
     width: 100%;
@@ -231,6 +232,7 @@ ion-icon {
 }
 @media (max-width: 619px) {
     #cover-preview img,
+    ,video preview video,
     .imagesPreview img {
         max-height: 150px;
     }
